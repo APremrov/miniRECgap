@@ -1,0 +1,59 @@
+Package: miniRECgap
+Title: 'miniRECgap': R-package for gap-filling of the missing 
+       eddy covariance CO2 flux measurements using selected 
+       classic nonlinear environmental response functions 
+       via simple user-friendly GUI supported R scripts
+Version: 0.1.0
+Authors@R: 
+    person("Alina", "Premrov", email = "premrova@tcd.ie", role = c("aut","cre"),
+    comment = "www.researchgate.net/profile/Alina-Premrov")
+Copyright: Copyright (c) Trinity College Dublin 2024.
+Date: 01 August 2024
+URL: DOI will be added after publishing package on Zenodo.
+Description: 'miniRECgap' is a R-package designed for gap-filling of the missing
+    eddy covariance CO2 flux measurements with the use of simple user-friendly 
+    GUI supported R scripts. The flux-partitioning and gap-filling approaches 
+    applied in ‘miniRECgap’ are based on popular simple and robust empirical/semi-empirical 
+    modelling.
+    Further information on miniRECgap package and its use can be found in the 
+    publication by Premrov et al. (in prep. 2024).
+Imports:
+  stats,
+  utils,
+  fgui,
+  dplyr,
+  ggplot2,
+  grDevices
+Note: 
+  The use of 'miniRECgap' package requires that the R-packages listed  under
+  'Imports' are pre-loaded (the users need to make sure to check these packages 
+  for their detailed information on their licensing, citation, and other relevant
+  information).
+    These packages (with some basic information) are listed below.
+    - packages 'stats', 'utils' and 'grDevices' by 'The R Core Team and 
+    contributors worldwide' [license -  part of R 4.4.0; 
+    some links that may be useful are 
+    stat.ethz.ch/R-manual/R-devel/library/stats/DESCRIPTION,
+    stat.ethz.ch/R-manual/R-devel/library/utils/DESCRIPTION 
+    and stat.ethz.ch/R-manual/R-devel/library/grDevices/DESCRIPTION];
+    - package 'fgui' by T. Hoffmann (2009) [license - GPL 2, 
+    GPL 3 - expanded from GPL; some links that may be useful 
+    cran.r-project.org/web/packages/fgui/index.html, 
+    cran.r-project.org/web/packages/fgui/citation.html];
+     - packages 'dplyr' and 'ggplot2'by H. Wickham et al. (2023)  and 
+    H. Wickham (2016) [license - MIT + file LICENSE; some links that 
+    may be useful are
+    cran.r-project.org/web/packages/dplyr/, 
+    cran.r-project.org/web/packages/dplyr/dplyr.pdf, github.com/tidyverse/dplyr, 
+    cran.r-project.org/web/packages/ggplot2/, 
+    cran.r-project.org/web/packages/ggplot2/citation.html, 
+    github.com/tidyverse/ggplot2].
+References: FUTURE PUBLICATION Alina Premrov, et.al. (in prep. 2024).  
+            # AFTER PUBLISHING, THE REFERENCES WILL BE UPDATED IN THE PACKAGE UPLOADED ON GitHub#
+License: MIT + file LICENSE
+        (The users also need to comply with the licenses that apply to R-base 
+        software and the required  packages/libraries listed under 
+        the 'Imports'.)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

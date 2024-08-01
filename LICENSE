@@ -1,0 +1,91 @@
+YEAR: 2024
+
+COPYRIGHT HOLDER/s, AUTHOR/s & CO-AUTHOR/s, CREATOR/s:
+- 'miniRECgap':  Copyright (c) Trinity College Dublin 2024.
+- 'miniRECgap': R package  author/s and creator/s - information is provided in
+the 'DESCRIPTION'  and 'READ ME' files.
+- Accompanying/supporting documentation Premrov et al. (paper in preparation
+2024):   Publishing body and manuscript authors/coauthors -  DOI: will be
+provided after the paper is published.
+
+
+NOTE ON LICENSING:
+
+'miniRECgap' package (including all versions of the 'miniRECgap' package)
+LICENSE: MIT + file LICENSE (see 'LICENSE.md' file) with exception of
+parts of the code that is using functions imported from other packages, which
+have their own licenses   - these packages are listed under 'Imports' in
+'DESCRIPTION' file, and are also listed below:
+  stats,
+  utils,
+  fgui,
+  dplyr,
+  ggplot2,
+  grDevices.
+
+In addition to complying with the licensing requirements of  the 'miniRECgap'
+package (Software), the Software users  also need  to comply with the specific
+requirements for the use of the above listed R-packages (also listed under the
+'DESCRIPTION', 'Imports'). The Software users also  need to make sure  to
+check for the detailed information on above packages such as their specific
+licenses, citation requirements, and other relevant information under which the
+use of these packages is permitted. Some  extracted information on the above
+packages is listed below (listed also in the 'DESCRIPTION');
+however, the users also need to further check (by themselves) all other relevant
+information under which the use of these packages is permitted, and follow these
+requirements. In addition to  checking the package official web-sites, the users
+can also further check some information by using commands ?('package name'),
+cite('package name') and packageDescription('package name', fields="License").
+Further general information on licensing used in R packages can be found
+at links:
+https://cran.r-project.org/web/licenses/,
+https://r-pkgs.org/license.html.
+
+Some extracted information on the above packages:
+
+  - packages 'stats', 'utils' and 'grDevices' by 'The R Core Team and
+  contributors worldwide' [license -  part of R 4.4.0;  some links that may
+  be useful:
+  https://stat.ethz.ch/R-manual/R-devel/library/stats/DESCRIPTION,
+  https://stat.ethz.ch/R-manual/R-devel/library/utils/DESCRIPTION and
+  https://stat.ethz.ch/R-manual/R-devel/library/grDevices/DESCRIPTION];
+
+  - package 'fgui' by T. Hoffmann (2009) [license - GPL 2, GPL 3 -
+  expanded from GPL;  some links that may be useful:
+  https://cran.r-project.org/web/packages/fgui/index.html,
+  https://cran.r-project.org/web/packages/fgui/citation.html];
+
+  - packages 'dplyr' and 'ggplot2'by 	H. Wickham et al. (2023)
+  and H. Wickham (2016) [license - MIT + file LICENSE; some links that
+  may be useful:
+  https://cran.r-project.org/web/packages/dplyr/,
+  https://cran.r-project.org/web/packages/dplyr/dplyr.pdf,
+  https://github.com/tidyverse/dplyr,
+  https://cran.r-project.org/web/packages/ggplot2/,
+  https://cran.r-project.org/web/packages/ggplot2/citation.html,
+  https://github.com/tidyverse/ggplot2].
+
+
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDERS, THE CREATORS, AUTHORS & CO-AUTHORS
+OF THE 'miniRECgap' R PACKAGE (SOFTWARE), INCLUDING DIFFERENT VERSIONS OF
+THIS PACKAGE, AND ITS ACCOMPANYING/SUPPORTING DOCUMENTATION INCLUDING ANY
+PUBLICATION/S ASSOCIATED WITH THE USE OF THIS PACKAGE OR ITS VERSIONS, THE
+ASSOCIATED RESEARCH PROJECT/S AND THEIR FUNDER/S (UNDER WHICH THE WORK ON THE
+SOFTWARE AND ITS ACCOMPANYING/SUPPORTING DOCUMENTATION OR PUBLICATIONS WAS/IS
+PERFORMED), THE PROJECT HOST- & AUTHOR/CO-AUTHOR AFFILIATED- INSTITUTIONS, BE
+LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE
+(INCLUDING ITS DIFFERENT VERSIONS) AND ITS DOCUMENTATION,
+EVEN IF THEY HAVE  BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+THE COPYRIGHT HOLDERS, THE CREATORS, AUTHORS & CO-AUTHORS OF THE 'miniRECgap'
+R PACKAGE (SOFTWARE), OR DIFFERENT VERSIONS OF THIS PACKAGE, AND ITS
+ACCOMPANYING/SUPPORTING  DOCUMENTATION INCLUDING PUBLICATION/S, THE ASSOCIATED
+RESEARCH PROJECT/S AND THEIR FUNDER/S (UNDER WHICH THE WORK ON THE SOFTWARE,
+ITS DIFFERENT VERSIONS AND ITS ACCOMPANYING/SUPPORTING DOCUMENTATION WAS/IS
+PERFORMED), THE PROJECT HOST/S- & AUTHOR/CO-AUTHOR AFFILIATED-INSTITUTION/S
+ALSO HAVE NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATE,
+ENHANCEMENTS, OR MODIFICATIONS OF THE PROVIDED 'miniRECgap' R PACKAGE (SOFTWARE)
+AND ITS DOCUMENTATION,INCLUDING DIFFERENT VERSIONS OF THIS PACKAGE.
+

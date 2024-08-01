@@ -1,0 +1,41 @@
+#' Function 'GFillData' performs processing of the modelled GPP, which is used to calculate the modelled NEE
+#' and gap-fills NEE.
+#' The function first processes the GPPMod saved in 'GPP_MOD.csv’ output (which refers to an intermediate
+#' modelled GPP output; see also function 'ModGPP'). Processing involves filtering of the GPPMod to
+#' remove any positive values (using threshold PPFD (dos Reis and Ribeiro, 2020; Wutzler et al. 2018);
+#' see function 'CalcGPP' for further details) and multiplying by -1 to convert back the sign.
+#' After processing, the function next uses the processed modelled GPP  to calculate modelled NEE (NEEMod)
+#' (equation NEE = GPP + Reco (Baldocchi and Valentini, 2004; MPI, 2024; Reichle, 2019); see function 'CalcGPP'
+#' for further details).
+#' Function 'GFillData' also writes the gap-filled data into 'GapFilledData.csv' file.
+#' The processed modelled GPP output refers to variable name 'GPPMod2' in the csv file.
+#' The gap-filled NEE refers to variable name 'GapFilledNEE'in the csv file.
+#' The function finally calls the next GUI to upload the 'GapFilledData.csv' file in order to plot the data.
+#' GUI window is created using 'guiv' function from  'fgui' package. Please ensure to cite the required packages.
+#'
+#' References:
+#' - Wutzler, T., Lucas-Moffat, A., Migliavacca, M., Knauer, J., Sickel, K., Šigut, L., Menzer, O., Reichstein, M. (2018) Basic and extensible post-processing of eddy covariance flux data with REddyProc. Biogeosciences 15, 5015-5030, DOI: 10.5194/bg-15-5015-2018.
+#' - dos Reis, M., Ribeiro, A. (2020) Conversion factors and general equations applied in agricultural and forest meteorology.  27, 227-258, URL: https://www.researchgate.net/publication/339896036 (Date Last Accessed June 2024).
+#' - Baldocchi, D., Valentini, R. (2004) Geographic and temporal variation of carbon exchange by ecosystems and their sensitivity to environmental perturbations  SCOPE-Scientific Committee on Problems of the Environment International Council of Scientific Unions.
+#' - MPI, (2024) REddyProc Web online tool. FAQ.  "Why does negative NEE define an net uptake of the ecosystem?. Max Planck Institute (MPI), Biogeosciences. URL: https://www.bgc-jena.mpg.de/5629512/FAQ (Date Last Accessed June 2024).
+#' - Reichle, D. (2019) The global carbon cycle and climate change. Elsevier. DOI: https://doi.org/10.1016/C2019-0-01382-9.
+#'
+#'
+#' @export
+
+#library('fgui')
+#library('utils')
+
+GFillData <- function(csvFileGPP_MOD) {
+  data <- read.csv(csvFileGPP_MOD)
+  data$GPPMod2<-data$GPPMod
+  data$GPPMod2[data$PPFD<20.2]<-0
+  data$GPPMod2<-data$GPPMod2*(-1)
+  data$NEEMod<-data$GPPMod2+data$RecoMOD
+  data$GapFilledNEE<-data$NEE
+  data<- data %>%
+    mutate(GapFilledNEE = coalesce(GapFilledNEE,NEEMod))
+  write.csv(data, "GapFilledData.csv", row.names=FALSE)
+  guiv(Plot_gapfilledNEE, argFilename=list(csvFileGapFilled=NULL), callback=guiCallbackRecoMOD, title="Plot gap-filled NEE", closeOnExec=TRUE)
+
+}

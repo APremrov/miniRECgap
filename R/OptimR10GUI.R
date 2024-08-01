@@ -1,0 +1,21 @@
+#' Function 'OptimR10GUI' calls next GUI to model Reco and optimise R10 according to the
+#' modified Arrhenius equation adapted from Lloyd and Taylor (1994).
+#' The GUI will ask to upload the nighttime flux data ('Reco_night.csv')and to choose the arbitrary value  Xo
+#' (representing initial arbitrary value for R10 prior to optimisation).
+#' It will call  function  'OptimR10' to perform optimisation of R10 (see function  'OptimR10' for further details).
+#' It will return the optimised R10 as an output in the R-Console.
+#'
+#' References:
+#' - Lloyd, J., Taylor, J.A. (1994) On the temperature dependence of soil respiration. Functional Ecology, 8, 315-323. DOI: https://doi.org/10.2307/2389824".
+#'
+#' GUI window is created using 'guiv' function from  'fgui' package. Please ensure to cite the required packages.
+#'
+#' @export
+
+#library('fgui')
+#library('utils')
+
+OptimR10GUI<- function(OptimR10) {
+
+  guiv(OptimR10, argFilename=list(csvFilename_reco=NULL), callback=guiCallbackreco, title="Optimise R10", closeOnExec=TRUE)
+}

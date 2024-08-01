@@ -1,0 +1,34 @@
+#' Function 'Cite_calc_miniRECgap' is provided to allow for easy citation of the:
+#' -  method used in the calculation of the modelled Reco using the temperature-response function according to modified
+#'    Arrhenius equation adapted from Loyd and Taylor (1994);
+#' -  method used in the calculation of the modelled GPP using the  light-response function adapted from Rabinowitch (1951)
+#'    model, reported in Gilmanov et al. (2003);
+#' -  threshold value for the incoming solar radiation  (Rg) of 10 W m^(-2) from Wutzler et al. (2018), used for daytime/nighttime partitioning of
+#'    eddy covariance (EC) flux data; and
+#' -  conversion factor of 2.02 (reported in dos Reis and Ribeiro, 2020), used to convert the Rg threshold value of 10 W m^(-2)
+#'    into photosynthetic photon flux density (PPFD) (and resulting in the threshold PPFD value of 20.2 µ mol (quanta) m^(-2) s^(-1)).
+#'
+#' References:
+#' - Lloyd, J., Taylor, J.A. (1994) On the temperature dependence of soil respiration. Functional Ecology, 8, 315-323. DOI: https://doi.org/10.2307/2389824".
+#' - Rabinowitch, E.I. (1951) Photosynthesis and Related Processes. Interscience Publishers.
+#' - Gilmanov, T.G., Verma, S.B., Sims, P.L., Meyers, T.P., Bradford, J.A., Burba, G.G., Suyker, A.E. (2003) Gross primary production and light response parameters of four Southern Plains ecosystems estimated using long-term CO2-flux tower measurements. Global Biogeochemical Cycles, 17/2, 1071, DOI:10.1029/2002GB002023.
+#' - Wutzler, T., Lucas-Moffat, A., Migliavacca, M., Knauer, J., Sickel, K., Šigut, L., Menzer, O., Reichstein, M. (2018) Basic and extensible post-processing of eddy covariance flux data with REddyProc. Biogeosciences 15, 5015-5030, DOI: 10.5194/bg-15-5015-2018.
+#' - dos Reis, M., Ribeiro, A. (2020) Conversion factors and general equations applied in agricultural and forest meteorology.  27, 227-258, URL: https://www.researchgate.net/publication/339896036 (Date Last Accessed June 2024).
+#'
+#'
+#' @export
+
+Cite_calc_miniRECgap <- function(calc_method) {
+   if(calc_method=="CalcRecoMod") {
+     print("Reference: Lloyd, J., Taylor, J.A. (1994) On the temperature dependence of soil respiration. Functional Ecology, 8, 315-323. DOI: https://doi.org/10.2307/2389824")
+   } else if (calc_method=="ModGPP") {
+     writeLines("References:\n\nRabinowitch, E.I. (1951) Photosynthesis and Related Processes. Interscience Publishers.\n\nGilmanov, T.G., Verma, S.B., Sims, P.L., Meyers, T.P., Bradford, J.A., Burba, G.G., Suyker, A.E. (2003)\nGross primary production and light response parameters of four Southern Plains ecosystems estimated using long-term CO2-flux tower measurements.\nGlobal Biogeochemical Cycles, 17/2, 1071, DOI:10.1029/2002GB002023.")
+   } else if (calc_method=="ThresholdPPFD") {
+     writeLines("References:\n\nWutzler, T., Lucas-Moffat, A., Migliavacca, M., Knauer, J., Sickel, K., Šigut, L., Menzer, O., Reichstein, M. (2018)\n Basic and extensible post-processing of eddy covariance flux data with REddyProc. Biogeosciences 15, 5015-5030, DOI: 10.5194/bg-15-5015-2018.\n\n dos Reis, M., Ribeiro, A. (2020) Conversion factors and general equations applied in agricultural and forest meteorology.\n27, 227-258, URL: https://www.researchgate.net/publication/339896036.")
+   } else {
+     print("Error in 'calc_method' entry.")
+   }
+
+
+}
+
