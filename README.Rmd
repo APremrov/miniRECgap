@@ -54,7 +54,7 @@ DOI:10.1029/2002GB002023.
 # # install.packages("devtools")
 # # If you have not installed devtools before you will need to restart your R session.
 
-library(devtools)
+library('devtools')
 
 # install_github('APremrov/miniRECgap')
 
