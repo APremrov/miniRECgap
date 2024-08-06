@@ -3,6 +3,7 @@ Title: 'miniRECgap': R-package for gap-filling of the missing
        eddy covariance CO2 flux measurements using selected 
        classic nonlinear environmental response functions 
        via simple user-friendly GUI supported R scripts
+Version:0.1.0
 Authors@R: 
     person("Alina", "Premrov", email = "premrova@tcd.ie", role = c("aut","cre"),
     comment = "www.researchgate.net/profile/Alina-Premrov")
