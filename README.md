@@ -15,7 +15,7 @@ GUI supported R scripts.
 Premrov, A. (2024) ‘miniRECgap’: R-package for gap-filling of the
 missing eddy covariance CO2 flux measurements using selected classic
 nonlinear environmental response functions via simple user-friendly GUI
-supported R scripts. Version: 0.1.0. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13228228.svg)](https://doi.org/10.5281/zenodo.13228228)
+supported R scripts. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13228227.svg)](https://doi.org/10.5281/zenodo.13228227)
 
 FUTURE PUBLICATION: Alina Premrov, et.al. (in prep. 2024).
 
