@@ -9,7 +9,7 @@ Authors@R:
     comment = "www.researchgate.net/profile/Alina-Premrov")
 Copyright: Copyright (c) Trinity College Dublin 2024.
 Date: 01 August 2024
-URL: https://github.com/APremrov/miniRECgap, DOI https://doi.org/10.5281/zenodo.13228227
+URL: URL https://github.com/APremrov/miniRECgap; DOI https://doi.org/10.5281/zenodo.13228227
 Description: 'miniRECgap' is a R-package designed for gap-filling of the missing
     eddy covariance CO2 flux measurements with the use of simple user-friendly 
     GUI supported R scripts. The flux-partitioning and gap-filling approaches 
