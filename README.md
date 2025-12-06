@@ -26,7 +26,7 @@ Wilson, D., Saunders, M., 2025. Introducing ‘miniRECgap’ R package for simpl
 of missing eddy covariance CO2 flux measurements with classic nonlinear environmental 
 response functions via GUI-supported R-scripts (case-study: In-sample gap-filling with 
 ‘miniRECgap’ vs. MDS and an optimised shallow ANN in a ‘challenging’ peatland ecosystem). 
-Environmental Modelling & Software 193 106611. DOI: https://doi.org/10.1016/j.envsoft.2025.106611
+Environmental Modelling & Software 193 106611. DOI: https://doi.org/10.1016/j.envsoft.2025.106611.
 
 
 ## References for the nonlinear environmental response functions applied in ‘miniRECgap’:
@@ -73,7 +73,8 @@ lapply((c('stats','utils','fgui','dplyr','ggplot2','grDevices'), require, charac
 ## Example
 
 Example using the ‘miniRECgap’ package is provided in publication
-Premrov et al. (2025). For instructions please check the publication by Premrov et al. (2025)
+Premrov et al. (2025), DOIhttps://doi.org/10.1016/j.envsoft.2025.106611.
+For instructions please check the publication by Premrov et al. (2025)
 including the Supplemental Material (full references above under 'Cite').
 
 
